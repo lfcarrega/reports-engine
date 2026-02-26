@@ -1,0 +1,1 @@
+select codigo 'Codigo', nome 'Nome', limite from cliente where limite <> 'null'

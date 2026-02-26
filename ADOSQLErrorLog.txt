@@ -1,0 +1,11 @@
+
+Invalid column name 'limite'.
+   Number: -2147217900, NativeError: 207, Source: Microsoft OLE DB Driver for SQL Server, SQLState: 42S22, User: admin, Date: 3:18 PM Wednesday, February 25, 2026
+
+
+Invalid column name 'codigo'.
+   Number: -2147217900, NativeError: 207, Source: Microsoft OLE DB Driver for SQL Server, SQLState: 42S22, User: admin, Date: 3:18 PM Wednesday, February 25, 2026
+
+
+Invalid column name 'limite'.
+   Number: -2147217900, NativeError: 207, Source: Microsoft OLE DB Driver for SQL Server, SQLState: 42S22, User: admin, Date: 3:18 PM Wednesday, February 25, 2026

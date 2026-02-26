@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+<title>demo Report</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico"> </link>
+<link href="../css/tabulator.css" rel="stylesheet"> </link>
+<link rel="stylesheet" href="../fontawesome-free/5.15.4/css/all.css" </link>
+<script type="text/javascript" src="../js/xlsx.full.min.js"></script>
+<script src="../js/jspdf.umd.min.js"></script>
+<script src="../js/jspdf.plugin.autotable.min.js"></script>
+<script src="../js/tabulator.js"> </script>
+</head>
+<body>
+<div>
+	<button id="download-csv">CSV</button>
+	<button id="download-json">JSON</button>
+	<button id="download-xlsx">XLSX</button>
+	<button id="download-pdf">PDF</button>
+	<button id="download-html">HTML</button>
+</div>
+<div id="report"></div>
+<style>
+
+</style>
+<script>
+var table = new Tabulator("#report", {
+	ajaxURL: "data.json",
+	autoColumns:"full",
+	autoResize:false,
+	layout:"fitData",
+	movableColumns:true,
+	columnDefaults:{
+		tooltip:true,
+		headerFilter:"list",
+			headerFilterParams: {
+				valuesLookup:true,
+				clearable:true,
+				multiselect: true
+			},
+	}
+});
+document.getElementById("download-csv").addEventListener("click", function(){
+	table.download("csv", "data.csv");
+});
+document.getElementById("download-json").addEventListener("click", function(){
+	table.download("json", "data.json");
+});
+document.getElementById("download-xlsx").addEventListener("click", function(){
+	table.download("xlsx", "data.xlsx", {sheetName:"Report"});
+});
+document.getElementById("download-pdf").addEventListener("click", function(){
+	table.download("pdf", "data.pdf", {
+		orientation:"landscape",
+		title:"Report",
+	});
+});
+document.getElementById("download-html").addEventListener("click", function(){
+	table.download("html", "data.html", {style:true});
+});
+</script>
+</body>
+</html>

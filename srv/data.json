@@ -1,0 +1,12 @@
+﻿[
+{"id": "1", "nome": "Lucas Ferreira", "cpf": "11122233344", "email": "lucas@email.com", "telefone": "11900010001", "cidade": "São Paulo", "estado": "SP", "ativo": "1"},
+{"id": "2", "nome": "Fernanda Costa", "cpf": "22233344455", "email": "fernanda@email.com", "telefone": "11900020002", "cidade": "São Paulo", "estado": "SP", "ativo": "1"},
+{"id": "3", "nome": "Roberto Almeida", "cpf": "33344455566", "email": "roberto@email.com", "telefone": "19900030003", "cidade": "Campinas", "estado": "SP", "ativo": "1"},
+{"id": "4", "nome": "Patrícia Lima", "cpf": "44455566677", "email": "patricia@email.com", "telefone": "41900040004", "cidade": "Curitiba", "estado": "PR", "ativo": "1"},
+{"id": "5", "nome": "Marcelo Rodrigues", "cpf": "55566677788", "email": "marcelo@email.com", "telefone": "21900050005", "cidade": "Rio de Janeiro", "estado": "RJ", "ativo": "1"},
+{"id": "6", "nome": "Juliana Martins", "cpf": "66677788899", "email": "juliana@email.com", "telefone": "11900060006", "cidade": "São Paulo", "estado": "SP", "ativo": "1"},
+{"id": "7", "nome": "Eduardo Nascimento", "cpf": "77788899900", "email": "eduardo@email.com", "telefone": "19900070007", "cidade": "Campinas", "estado": "SP", "ativo": "1"},
+{"id": "8", "nome": "Camila Pereira", "cpf": "88899900011", "email": "camila@email.com", "telefone": "41900080008", "cidade": "Curitiba", "estado": "PR", "ativo": "1"},
+{"id": "9", "nome": "Diego Barbosa", "cpf": "99900011122", "email": "diego@email.com", "telefone": "21900090009", "cidade": "Rio de Janeiro", "estado": "RJ", "ativo": "1"},
+{"id": "10", "nome": "Tatiane Gonçalves", "cpf": "00011122233", "email": "tatiane@email.com", "telefone": "11900100010", "cidade": "São Paulo", "estado": "SP", "ativo": "1"}
+]

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link href="../dist/css/tabulator_midnight.min.css" rel="stylesheet"> </link>
+	<script src="../dist/js/tabulator.js"> </script>
+</head>
+<body>
+	<div id="example-table"></div>
+	<script>
+//define data array
+var tabledata =[
+{"Codigo": "312", "CodOrdem": "405", "Data": "03/07/2025", "CodCli": "1", "Total": "61,9", "Recebido": "100", "Troco": "38,1", "PorDesc": "0", "ValDesc": "0", "PorAcre": "0", "ValAcre": "0", "Custo": "37,4", "EmitirCupom": "", "CodConfig": "1", "Hora": "16:12", "StatusDAV": "", "NumDAV": "", "NFP": "0", "CPFCliente": "000.000.000-00", "CodPedido": "", "Auxiliar": "KLEBER 03/07/2025 16:12:36:09796", "CodOrdensTEF": "0", "Placa": "", "Modelo": "", "KM": "", "TotalFrete": "0", "CodNFe": "", "Operador": "ADMINISTRADOR", "TipoDesc": "T", "CodOrdensPed": "", "CodNFSe": "", "ComissaoMKP": "", "FreteMKP": "", "TotalCashback": "0", "CodIndicador": "0"},
+{"Codigo": "313", "CodOrdem": "406", "Data": "03/07/2025", "CodCli": "1", "Total": "100,8", "Recebido": "1312312", "Troco": "1312211,2", "PorDesc": "0", "ValDesc": "0", "PorAcre": "0", "ValAcre": "0", "Custo": "99,7", "EmitirCupom": "", "CodConfig": "1", "Hora": "16:17", "StatusDAV": "", "NumDAV": "", "NFP": "0", "CPFCliente": "000.000.000-00", "CodPedido": "", "Auxiliar": "KLEBER 03/07/2025 16:17:29:70514", "CodOrdensTEF": "0", "Placa": "", "Modelo": "", "KM": "", "TotalFrete": "0", "CodNFe": "", "Operador": "ADMINISTRADOR", "TipoDesc": "T", "CodOrdensPed": "", "CodNFSe": "", "ComissaoMKP": "", "FreteMKP": "", "TotalCashback": "0", "CodIndicador": "0"},
+];
+
+//initialize table
+var table = new Tabulator("#example-table", {
+	data:tabledata,		   //load row data from array
+	autoColumns:true, 
+	layout:"fitColumns",	  //fit columns to width of table
+	responsiveLayout:"hide",  //hide columns that don't fit on the table
+	addRowPos:"top",		  //when adding a new row, add it to the top of the table
+	history:true,			 //allow undo and redo actions on the table
+	pagination:"local",	   //paginate the data
+	paginationSize:100,		 //allow 100 rows per page of data
+	paginationCounter:"rows", //display count of paginated rows in footer
+	movableColumns:true,	  //allow column order to be changed
+	initialSort:[			 //set the initial sort order of the data
+		{column:"name", dir:"asc"},
+	],
+	columnDefaults:{
+		tooltip:true,		 //show tool tips on cells
+		headerFilter:true,
+	},
+	columns:[				 //define the table columns
+	],
+});
+	</script>
+</body>
+</html>
